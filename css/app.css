@@ -1,56 +1,32 @@
 * {
     box-sizing: border-box;
-}
-
-body {
+  }
+   
+  body {
+    font-family: "Oswald", sans-serif;
     margin: 0;
     padding: 0;
-}
-
-header {
+  }
+   
+  header {
     display: inline;
-}
-
-header, footer {
-    background-color: #f1f1f1;
-    padding: 10px;
-    text-align: center;
-}
-
-.jumbotron {
-    width: 100%;
-    height: 0vh;
-    font-size: 20px;
-    padding: 150px;
-    background-image: url(img/animasiAIR.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    color: white;
-    text-shadow: 
-    1px 1px black,
-    1px 1px black,
-    1px 1px black,
-    1px 1px black;
-}
-
-nav {
-    background-color: #182a2e;
+  }
+   
+  nav {
+    background-color: #393b3b;
     padding: 5px;
     position: sticky;
     top: 0;
-    z-index: 1000;
-}
-
-nav ul {
+  }
+   
+  nav ul {
     padding-inline: 4rem;
    
     display: flex;
     gap: 2rem;
-}
-
-nav li {
+  }
+   
+  nav li {
     list-style-type: none;
   }
 
@@ -72,50 +48,152 @@ nav li {
   }
    
   nav a:hover {
-    background-color: white;
-    color: #182a2e;
+    background-color: #fff;
+    color: black;
+  }
+   
+  main {
+    padding: 20px;
+   
+    display: flex;
+    gap: 1.5rem;
   }
 
-h2 {
-    margin-bottom: 20px;
-}
-
-p {
-    margin-top: 0;
-}
-
-main {
-    display: flex;
-    flex: 1;
-    flex-direction: row;
-    gap: 1.5rem;
-    padding: 20px;
-}
-
-.card {
-    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-    padding: 20px;
-}
-
-article {
-    background-color: rgb(207, 206, 205);
-}
-
-#content {
-    flex: 4;
+  article {
+    background-color: rgb(209, 209, 209);
+  }
+   
+  #content {
+    flex: 3;
    
     display: flex;
     flex-flow: column nowrap;
     gap: 1rem 2rem;
-}
-
-aside {
+  }
+   
+  aside {
     flex: 1;
-    /* Gaya untuk aside */
+  }
+   
+  h2 {
+    color: #000000;
+  }
+   
+  p {
+    font-size: 1.2rem;
+  }
+
+  .custom {
+    list-style-type: none;
+    color: black;
+  }
+
+  .back {
+    display: inline-block;
+    padding: 8px 16px;
+    border: 1px solid #000;
+    border-radius: 10px;
+    background-color: #fff;
+    transition: background-color 0.3s, color 0.3s;
+    text-decoration: none;
+    color: rgb(30, 116, 97);
+  }
+
+  .back:hover {
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #000;
+  }
+
+  figcaption {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+   
+  footer {
+    padding: 20px;
+    color: #fff;
+    text-align: center;
+    background-color: #393b3b;
+  }
+   
+  .jumbotron {
+    font-size: 20px;
+    padding: 150px;
+    background-image: url(../img/animasiAIR.jpg);
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    text-shadow: 
+    1px 1px black,
+    1px 1px black,
+    1px 1px black,
+    1px 1px black;
+    color: white;
+  }
+   
+  .profile header {
+    text-align: center;
+  }
+   
+  .featured-image {
+    width: 100%;
+    height: auto;
+   
+    object-fit: cover;
+    object-position: center;
+  }
+
+.imgPenulis {
+    width: 100%;
+    height: auto;
+   
+    object-fit: cover;
+    object-position: center;
+}
+   
+.hyperteks {
+    color: black;
 }
 
-img {
-    max-width: 100%;
-    height: auto;
+.hyperteks:hover {
+    font-weight: bold;
+    columns: blue;
 }
+
+  .card {
+    box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+  }
+   
+  @media screen and (max-width: 1200px) {
+    header.navbar-conteiner {
+      flex-direction: column;
+    }
+
+    header.navbar-conteiner .nav-list ul {
+      flex-wrap: wrap;
+      column-gap: 5rem;
+    }
+    
+    main {
+      flex-flow: column nowrap;
+    }
+   
+    main aside {
+      align-self: center;
+    }
+  }
+   
+  @media screen and (max-width: 768px) {
+    nav ul {
+      justify-content: center;
+    }
+   
+    main aside {
+      align-self: stretch;
+    }
+  }
