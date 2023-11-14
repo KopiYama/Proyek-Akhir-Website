@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: inline;
+}
+
+header, footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+.jumbotron {
+    font-size: 20px;
+    padding: 60px;
+    background-image: url(img/animasiAIR.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    color: white;
+    text-shadow: 
+    1px 1px black,
+    1px 1px black,
+    1px 1px black,
+    1px 1px black;
+}
+
+nav {
+    background-color: #182a2e;
+    padding: 5px;
+    position: sticky;
+    top: 0;
+}
+
+nav ul {
+    padding-inline: 4rem;
+   
+    display: flex;
+    gap: 2rem;
+}
+
+nav li {
+    list-style-type: none;
+  }
+
+  nav li a {
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: white;
+    padding: .5rem 1.5rem;
+    border-radius: 999px;
+    transition: all .2s ease-in-out;
+  }
+   
+  nav a {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: white;
+  }
+   
+  nav a:hover {
+    background-color: white;
+    color: #182a2e;
+  }
+
+main {
+    display: flex;
+    flex: 1;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+}
+
+article {
+    flex: 3;
+    /* Gaya untuk artikel */
+}
+
+aside {
+    flex: 1;
+    /* Gaya untuk aside */
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
